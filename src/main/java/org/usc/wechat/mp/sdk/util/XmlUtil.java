@@ -7,7 +7,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-import org.usc.wechat.mp.sdk.vo.push.Push;
+import org.usc.wechat.mp.sdk.vo.ask.Ask;
 import org.usc.wechat.mp.sdk.vo.reply.Reply;
 
 /**
@@ -23,12 +23,12 @@ public class XmlUtil {
      * @param childClass
      * @return
      */
-    public static Push unmarshal(String message, Class<? extends Push> childClass) {
+    public static Ask unmarshal(String message, Class<? extends Ask> childClass) {
         try {
-            JAXBContext jaxbCtx = JAXBContext.newInstance(Push.class, childClass);
+            JAXBContext jaxbCtx = JAXBContext.newInstance(Ask.class, childClass);
             Unmarshaller unmarshaller = jaxbCtx.createUnmarshaller();
 
-            return (Push) unmarshaller.unmarshal(new StringReader(message));
+            return (Ask) unmarshaller.unmarshal(new StringReader(message));
         } catch (Exception e) {
         }
 

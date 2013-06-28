@@ -8,7 +8,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.usc.wechat.mp.sdk.factory.ReplyEnumFactory;
 import org.usc.wechat.mp.sdk.vo.ReplyDetail;
 import org.usc.wechat.mp.sdk.vo.ReplyDetailWarpper;
-import org.usc.wechat.mp.sdk.vo.push.Push;
+import org.usc.wechat.mp.sdk.vo.ask.Ask;
 import org.usc.wechat.mp.sdk.vo.reply.Reply;
 
 /**
@@ -16,7 +16,7 @@ import org.usc.wechat.mp.sdk.vo.reply.Reply;
  * @author Shunli
  */
 public class ReplyUtil {
-    public static Reply buildReply(Reply reply, Push push) {
+    public static Reply buildReply(Reply reply, Ask push) {
         try {
             if (reply != null) {
                 // keep is new instance

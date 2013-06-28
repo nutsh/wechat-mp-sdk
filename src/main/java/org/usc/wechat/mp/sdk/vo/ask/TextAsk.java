@@ -1,4 +1,4 @@
-package org.usc.wechat.mp.sdk.vo.push;
+package org.usc.wechat.mp.sdk.vo.ask;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,16 +11,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement(name = "xml")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ImagePush extends Push {
-    @XmlElement(name = "PicUrl")
-    private String picUrl;
+public class TextAsk extends Ask {
+    @XmlElement(name = "Content")
+    private String content;
 
-    public String getPicUrl() {
-        return picUrl;
+    public String getContent() {
+        return content;
     }
 
-    public void setPicUrl(String picUrl) {
-        this.picUrl = picUrl;
+    public void setContent(String content) {
+        this.content = content;
     }
 
 }

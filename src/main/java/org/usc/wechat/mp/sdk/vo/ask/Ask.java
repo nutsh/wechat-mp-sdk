@@ -1,4 +1,4 @@
-package org.usc.wechat.mp.sdk.vo.push;
+package org.usc.wechat.mp.sdk.vo.ask;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -14,7 +14,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
  */
 @XmlRootElement(name = "xml")
 @XmlAccessorType(XmlAccessType.FIELD)
-public abstract class Push {
+public abstract class Ask {
     @XmlElement(name = "ToUserName")
     private String toUserName;
 

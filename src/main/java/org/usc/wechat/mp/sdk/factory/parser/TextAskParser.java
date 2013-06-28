@@ -1,22 +1,22 @@
 package org.usc.wechat.mp.sdk.factory.parser;
 
 import org.usc.wechat.mp.sdk.util.ReplyUtil;
-import org.usc.wechat.mp.sdk.vo.push.Push;
-import org.usc.wechat.mp.sdk.vo.push.TextPush;
+import org.usc.wechat.mp.sdk.vo.ask.Ask;
+import org.usc.wechat.mp.sdk.vo.ask.TextAsk;
 import org.usc.wechat.mp.sdk.vo.reply.Reply;
 
 /**
  *
  * @author Shunli
  */
-public class TextPushParser implements PushParser {
+public class TextAskParser implements AskParser {
     @Override
-    public Reply parse(Push push) {
-        if (!(push instanceof TextPush)) {
+    public Reply parse(Ask push) {
+        if (!(push instanceof TextAsk)) {
             return null;
         }
 
-        TextPush textPush = (TextPush) push;
+        TextAsk textPush = (TextAsk) push;
 
         // TODO please custom it.
         Reply reply = ReplyUtil.parseReplyDetailWarpper(ReplyUtil.getDummyNewsReplyDetailWarpper());

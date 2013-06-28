@@ -1,15 +1,15 @@
 package org.usc.wechat.mp.sdk.factory.parser;
 
-import org.usc.wechat.mp.sdk.vo.push.Push;
+import org.usc.wechat.mp.sdk.vo.ask.Ask;
 import org.usc.wechat.mp.sdk.vo.reply.Reply;
 
 /**
  *
  * @author Shunli
  */
-public class LinkPushParser implements PushParser {
+public class ImageAskParser implements AskParser {
     @Override
-    public Reply parse(Push push) {
+    public Reply parse(Ask push) {
         return null;
     }
 

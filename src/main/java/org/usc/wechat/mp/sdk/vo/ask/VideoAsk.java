@@ -1,4 +1,4 @@
-package org.usc.wechat.mp.sdk.vo.push;
+package org.usc.wechat.mp.sdk.vo.ask;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -11,7 +11,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement(name = "xml")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class VideoPush extends Push {
+public class VideoAsk extends Ask {
     @XmlElement(name = "MediaId")
     private String mediaId;
 
