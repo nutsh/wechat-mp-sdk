@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.github.usc</groupId>
     <artifactId>wechat-mp-sdk</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>wechat-mp-sdk</name>
     <url>https://github.com/usc/wechat-mp-sdk</url>
@@ -21,13 +21,13 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/usc/wechat-mp-sdk.git</connection>
-        <developerConnection>scm:git:git@github.com:usc/wechat-mp-sdk.git</developerConnection>
-        <url>https://github.com/usc/wechat-mp-sdk</url>
+        <connection>scm:git:git://github.com/nutsh/wechat-mp-sdk.git</connection>
+        <developerConnection>scm:git:git@github.com:nutsh/wechat-mp-sdk.git</developerConnection>
+        <url>https://github.com/nutsh/wechat-mp-sdk</url>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/usc/wechat-mp-sdk/issues</url>
+        <url>https://github.com/nutsh/wechat-mp-sdk/issues</url>
     </issueManagement>
 
     <developers>
